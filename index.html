@@ -581,14 +581,6 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12">
-                        <div class="guestbook-carousel owl-carousel" id="guestbook-carousel">
-                            <div class="guestbook-empty-message" id="guestbook-empty">Soyez le premier &agrave; laisser un message&nbsp;!</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <div class="rsvp-wrap">
                             <div class="contact-form form-style">
@@ -617,9 +609,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="guestbook-marquee" id="guestbook-marquee">
+                            <div class="guestbook-track" id="guestbook-track">
+                                <div class="guestbook-empty-message" id="guestbook-empty">Soyez le premier &agrave; laisser un message&nbsp;!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- rsvp-area end -->
+
+        <!-- guestbook modal -->
+        <div class="guestbook-modal" id="guestbook-modal" aria-hidden="true">
+            <div class="guestbook-modal-overlay" id="guestbook-modal-overlay"></div>
+            <div class="guestbook-modal-content">
+                <button type="button" class="guestbook-modal-close" id="guestbook-modal-close" aria-label="Fermer">&times;</button>
+                <span class="guestbook-modal-quote">&ldquo;</span>
+                <p class="guestbook-modal-message" id="guestbook-modal-message"></p>
+                <h5 class="guestbook-modal-name" id="guestbook-modal-name"></h5>
+                <span class="guestbook-modal-date" id="guestbook-modal-date"></span>
+            </div>
+        </div>
+        <!-- end guestbook modal -->
         <!-- Gift Registration start -->
         <div class="Gift-area pt--100 pb--30">
             <div class="container">
