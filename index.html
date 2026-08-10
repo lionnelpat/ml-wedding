@@ -1,34 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="themepresss">
+    <meta name="author" content="ML-Wedding">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#824C1C">
     <meta name="description" content="Laetitia &amp; Joël se marient les 20 et 22 août 2026. Découvrez leur histoire et laissez-leur un message sur leur livre d'or.">
+    <meta name="keywords" content="Laetitia, Joël, mariage, wedding, ML-Wedding, Dakar, Église Évangélique de Dakar, EED, 2026">
 
     <!-- Page Title -->
     <title>Laetitia &amp; Joël | ML-Wedding 2026</title>
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.ml-wedding-2026.com/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ML-Wedding">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://www.ml-wedding-2026.com/">
+    <meta property="og:title" content="A Love Story of Three working as One">
+    <meta property="og:description" content="Laetitia &amp; Joël se marient les 20 et 22 août 2026. Découvrez leur histoire et laissez-leur un message sur leur livre d'or.">
+    <meta property="og:image" content="https://www.ml-wedding-2026.com/assets/photos/site/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Laetitia &amp; Joël">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Love Story of Three working as One">
+    <meta name="twitter:description" content="Laetitia &amp; Joël se marient les 20 et 22 août 2026. Découvrez leur histoire et laissez-leur un message sur leur livre d'or.">
+    <meta name="twitter:image" content="https://www.ml-wedding-2026.com/assets/photos/site/og-image.jpg">
+
+    <!-- Performance: preconnect to third-party origins used on this page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://w.soundcloud.com">
+    <link rel="preconnect" href="https://img.youtube.com">
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Great+Vibes&amp;display=swap" rel="stylesheet">
+
     <!-- Icon fonts -->
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Mariage de Laetitia & Joël",
+      "description": "Bénédiction nuptiale de Laetitia & Joël",
+      "startDate": "2026-08-22T12:00:00+00:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Église Évangélique de Dakar (EED)",
+        "hasMap": "https://maps.app.goo.gl/kBH1KoicSJ9SwxFv9"
+      },
+      "image": ["https://www.ml-wedding-2026.com/assets/photos/site/og-image.jpg"],
+      "performer": [
+        { "@type": "Person", "name": "Laetitia Boukaka" },
+        { "@type": "Person", "name": "Joël Melchisedec" }
+      ]
+    }
+    </script>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugins for this template -->
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
     <link href="assets/css/swiper.min.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -49,7 +103,10 @@
 
         <!-- prealoader area start -->
         <div id="preloader">
-            <div class="spiner"></div>
+            <div class="preloader-content">
+                <span class="preloader-logo">Laetitia &amp; Jo&euml;l</span>
+                <div class="spiner"></div>
+            </div>
         </div>
         <!-- prealoader area end -->
 
@@ -171,7 +228,7 @@
                         <div class="col-md-6 col-sm-6 grid couple-single">
                             <div class="couple-wrap">
                                 <div class="couple-img">
-                                    <img src="assets/photos/site/couple-laetitia.jpg" alt="Laetitia Boukaka">
+                                    <img src="assets/photos/site/couple-laetitia.jpg" alt="Laetitia Boukaka" loading="lazy" width="666" height="1000">
                                 </div>
                                 <div class="couple-text">
                                     <div class="couple-content">
@@ -184,7 +241,7 @@
                         <div class="col-md-6 col-sm-6 couple-single md-0 grid">
                             <div class="couple-wrap">
                                 <div class="couple-img couple-img-2">
-                                    <img src="assets/photos/site/couple-joel.jpg" alt="Joël Melchisedec">
+                                    <img src="assets/photos/site/couple-joel.jpg" alt="Joël Melchisedec" loading="lazy" width="666" height="1000">
                                 </div>
                                 <div class="couple-text">
                                     <div class="couple-content">
@@ -246,14 +303,14 @@
                                 </div>
                                 <div class="col col-md-6">
                                     <div class="img-holder">
-                                        <img src="assets/photos/site/story-1.jpg" alt class="img img-responsive">
+                                        <img src="assets/photos/site/story-1.jpg" alt="Laetitia & Joël" class="img img-responsive" loading="lazy" width="800" height="1200">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text story-slider">
-                                        <img src="assets/photos/site/story-2.jpg" alt class="img img-responsive">
+                                        <img src="assets/photos/site/story-2.jpg" alt="Laetitia & Joël" class="img img-responsive" loading="lazy" width="800" height="1200">
                                     </div>
                                 </div>
                                 <div class="col col-md-6 text-holder">
@@ -280,14 +337,14 @@
                                 </div>
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text story-slider">
-                                        <img src="assets/photos/site/story-3.jpg" alt class="img img-responsive">
+                                        <img src="assets/photos/site/story-3.jpg" alt="Laetitia & Joël" class="img img-responsive" loading="lazy" width="800" height="1200">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
                                     <div class="img-holder">
-                                        <img src="assets/photos/site/story-4.jpg" alt class="img img-responsive">
+                                        <img src="assets/photos/site/story-4.jpg" alt="Laetitia & Joël" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     </div>
                                 </div>
                                 <div class="col col-md-6 text-holder">
@@ -311,7 +368,7 @@
                                 </div>
                                 <div class="col col-md-6">
                                     <div class="img-holder">
-                                        <img src="assets/photos/site/story-5.jpg" alt class="img img-responsive">
+                                        <img src="assets/photos/site/story-5.jpg" alt="Laetitia & Joël" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     </div>
                                 </div>
                             </div>
@@ -378,22 +435,30 @@
                     </div>
                 </div>
                 <div class="row event-dates">
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <div class="event-date-card">
                             <span class="event-date-day">20</span>
                             <span class="event-date-month">Ao&ucirc;t 2026</span>
+                            <h4 class="event-date-title">Mariage Civil</h4>
+                            <p class="event-date-desc">Jeudi. D'autres d&eacute;tails logistiques vous seront communiqu&eacute;s d&egrave;s la semaine prochaine.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
+                        <div class="event-date-card event-date-card-highlight">
+                            <span class="event-date-day">22</span>
+                            <span class="event-date-month">Ao&ucirc;t 2026</span>
+                            <h4 class="event-date-title">B&eacute;n&eacute;diction Nuptiale</h4>
+                            <p class="event-date-desc">Samedi d&egrave;s 12h00 &mdash; &Eacute;glise &Eacute;vang&eacute;lique de Dakar (EED).<br>Le grand rendez-vous &agrave; ne pas manquer&nbsp;!</p>
+                            <a href="https://maps.app.goo.gl/kBH1KoicSJ9SwxFv9" target="_blank" rel="noopener" class="event-date-map">Voir sur la carte</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
                         <div class="event-date-card">
                             <span class="event-date-day">22</span>
                             <span class="event-date-month">Ao&ucirc;t 2026</span>
+                            <h4 class="event-date-title">Cocktail &amp; Vin d'Honneur</h4>
+                            <p class="event-date-desc">Juste apr&egrave;s le culte, dans la cour de l'&eacute;glise &mdash; un moment chaleureux &agrave; partager tous ensemble&nbsp;!</p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="event-note">Les d&eacute;tails du lieu et de l'horaire vous parviendront prochainement &mdash; merci de garder ces deux dates&nbsp;!</p>
                     </div>
                 </div>
             </div>
@@ -420,211 +485,211 @@
                         <div class="gallery-container gallery-fancybox masonry-gallery">
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-01.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-01.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-01.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-02.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-02.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-02.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-03.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-03.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-03.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-04.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-04.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-04.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-05.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-05.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-05.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-06.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-06.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-06.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-07.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-07.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-07.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-08.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-08.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-08.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-09.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-09.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-09.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-10.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-10.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-10.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-11.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-11.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-11.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-12.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-12.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-12.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-13.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-13.jpg" alt="Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-13.jpg" alt="Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-14.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-14.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-14.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-15.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-15.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-15.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-16.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-16.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-16.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-17.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-17.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-17.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-18.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-18.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-18.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-19.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-19.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-19.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-20.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-20.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-20.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Fiancailles">
                                 <a href="assets/photos/site/gallery-21.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-21.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-21.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-22.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-22.jpg" alt="Laetitia" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-22.jpg" alt="Laetitia" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-23.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-23.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-23.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1000" height="667">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid FamilleAmis">
                                 <a href="assets/photos/site/gallery-24.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/gallery-24.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/gallery-24.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="933" height="1400">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-01.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-01.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-01.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-02.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-02.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-02.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-03.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-03.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-03.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-04.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-04.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-04.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-05.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-05.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-05.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-06.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-06.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-06.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-07.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-07.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-07.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-08.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-08.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-08.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-09.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-09.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-09.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-10.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-10.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-10.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
                             <div class="grid Portraits">
                                 <a href="assets/photos/site/portrait-11.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/photos/site/portrait-11.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy">
+                                    <img src="assets/photos/site/portrait-11.jpg" alt="Laetitia &amp; Jo&euml;l" class="img img-responsive" loading="lazy" width="1066" height="1600">
                                     <div class="icon"><i class="ti-plus"></i></div>
                                 </a>
                             </div>
@@ -648,7 +713,7 @@
                 </div>
                 <div class="row videos-grid">
                     <div class="col-md-4 col-sm-6">
-                        <div class="video-card" data-youtube-id="IExMZ6cpf-I" tabindex="0" role="button" aria-label="Regarder la vid&eacute;o Chor&eacute;graphie 1">
+                        <div class="video-card" data-youtube-id="t_OiI7ibqHI" tabindex="0" role="button" aria-label="Regarder la vid&eacute;o Chor&eacute;graphie 1">
                             <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/IExMZ6cpf-I/hqdefault.jpg')">
                                 <span class="video-play"><i class="ti-control-play"></i></span>
                             </div>
@@ -791,7 +856,7 @@
                 <i class="ti-music-alt"></i>
             </button>
             <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102137206&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <iframe id="sc-player" allow="autoplay" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1791737857&amp;color=%23824C1C&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
             </div>
         </div>
         <!-- end music box -->
@@ -812,6 +877,8 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/videos.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="assets/js/music-autoplay.js"></script>
     <!-- <script src="assets/js/guestbook.js"></script> V2 -->
 </body>
 </html>
