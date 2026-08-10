@@ -1564,7 +1564,7 @@ div#preloader {
   top: 0;
   z-index: 1;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
