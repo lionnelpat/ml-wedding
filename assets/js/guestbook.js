@@ -1,9 +1,13 @@
 (function ($) {
     "use strict";
 
-    var $carousel = $("#guestbook-carousel");
+    var $marquee = $("#guestbook-marquee");
+    var $track = $("#guestbook-track");
     var $empty = $("#guestbook-empty");
-    var owlReady = false;
+    var $modal = $("#guestbook-modal");
+
+    var SPEED_PX_PER_SEC = 55; // constant scroll speed regardless of item count
+    var MIN_ITEMS_PER_COPY = 6; // repeat short lists so the marquee never looks empty
 
     function formatDate(iso) {
         try {
@@ -16,6 +20,10 @@
 
     function buildCard(entry) {
         var $item = $('<div class="guestbook-item"></div>');
+        $item.attr('data-name', entry.name);
+        $item.attr('data-message', entry.message);
+        $item.attr('data-date', entry.date);
+
         var $quote = $('<span class="guestbook-quote">&ldquo;</span>');
         var $msg = $('<p class="guestbook-message"></p>').text(entry.message);
         var $name = $('<h5 class="guestbook-name"></h5>').text(entry.name);
@@ -25,47 +33,32 @@
         return $item;
     }
 
-    function initOwl() {
-        if (owlReady || typeof $carousel.owlCarousel !== "function") {
-            return;
-        }
-        $carousel.owlCarousel({
-            loop: $carousel.children().length > 3,
-            margin: 25,
-            nav: true,
-            navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            items: 3,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                992: { items: 3 }
-            }
-        });
-        owlReady = true;
-    }
+    function renderMarquee(messages) {
+        $track.css('animation', 'none').empty();
 
-    function refreshOwl() {
-        if (owlReady) {
-            $carousel.trigger('destroy.owl.carousel');
-            $carousel.removeClass('owl-loaded owl-drag');
-            owlReady = false;
-        }
-        initOwl();
-    }
-
-    function renderMessages(messages) {
-        $carousel.empty();
         if (!messages || messages.length === 0) {
-            $carousel.append($empty);
+            $track.append($empty);
             return;
         }
-        messages.forEach(function (entry) {
-            $carousel.append(buildCard(entry));
+
+        var repeat = Math.max(1, Math.ceil(MIN_ITEMS_PER_COPY / messages.length));
+
+        for (var r = 0; r < repeat; r++) {
+            messages.forEach(function (entry) {
+                $track.append(buildCard(entry));
+            });
+        }
+
+        // Measure the width of a single copy, then duplicate it once more
+        // so translateX(-50%) loops seamlessly.
+        var singleWidth = $track[0].scrollWidth;
+        var $clones = $track.children().clone(true);
+        $track.append($clones);
+
+        var duration = Math.max(10, singleWidth / SPEED_PX_PER_SEC);
+        requestAnimationFrame(function () {
+            $track.css('animation', 'guestbook-scroll ' + duration + 's linear infinite');
         });
-        refreshOwl();
     }
 
     function loadMessages() {
@@ -75,18 +68,43 @@
             dataType: "json",
             success: function (res) {
                 if (res && res.success) {
-                    renderMessages(res.messages);
+                    renderMarquee(res.messages);
                 }
             }
         });
     }
 
+    function openModal(name, message, date) {
+        $("#guestbook-modal-name").text(name);
+        $("#guestbook-modal-message").text(message);
+        $("#guestbook-modal-date").text(formatDate(date));
+        $modal.addClass('is-open').attr('aria-hidden', 'false');
+    }
+
+    function closeModal() {
+        $modal.removeClass('is-open').attr('aria-hidden', 'true');
+    }
+
     $(function () {
-        if (!$carousel.length) {
+        if (!$track.length) {
             return;
         }
 
         loadMessages();
+
+        // Event delegation: cards are rebuilt on every reload.
+        $track.on("click", ".guestbook-item", function () {
+            var $this = $(this);
+            openModal($this.data('name'), $this.data('message'), $this.data('date'));
+        });
+
+        $("#guestbook-modal-close, #guestbook-modal-overlay").on("click", closeModal);
+
+        $(document).on("keydown", function (e) {
+            if (e.key === "Escape" && $modal.hasClass('is-open')) {
+                closeModal();
+            }
+        });
 
         $("#guestbook-form").on("submit", function (e) {
             e.preventDefault();
