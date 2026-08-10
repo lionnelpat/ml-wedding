@@ -2117,15 +2117,17 @@ div#preloader {
   border-bottom-right-radius: 80px;
 }
 .couple-img img{
-  transform: scale(1.2);
+  transform: scale(1);
   transition: all .3s;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
 }
 .couple-img:hover img{
-  transform: scale(1);
+  transform: scale(1.08);
 }
 .couple-wrap .couple-text ul{
   list-style: none;
