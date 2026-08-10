@@ -4657,3 +4657,23 @@ button:focus-visible,
   outline: 2px solid #824C1C;
   outline-offset: 3px;
 }
+
+/* --- Gift list section --- */
+.gift-list-actions {
+  margin: 30px 0 20px;
+}
+.gift-list-actions .theme-btn,
+.gift-list-actions .theme-btn-s2 {
+  margin: 0 8px 12px;
+}
+.gift-list-contact {
+  color: #595959;
+  font-size: 15px;
+}
+.gift-list-contact a {
+  color: #824C1C;
+  font-weight: 600;
+}
+.gift-list-contact a:hover {
+  color: #A68B73;
+}
