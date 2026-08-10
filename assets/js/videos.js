@@ -17,6 +17,9 @@
         $modal.addClass('is-open').attr('aria-hidden', 'false');
     }
 
+    // Shared with other scripts (e.g. the auto-popup intro video on scroll).
+    window.openVideoModal = openVideo;
+
     function closeVideo() {
         $modal.removeClass('is-open').attr('aria-hidden', 'true');
         $embed.empty(); // stop playback
