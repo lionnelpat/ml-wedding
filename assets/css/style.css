@@ -1563,8 +1563,9 @@ div#preloader {
   left: 0;
   top: 0;
   z-index: 1;
+  background-color: #160f0c;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1575,6 +1576,20 @@ div#preloader {
   -ms-flex-align: center;
   align-items: center;
   text-align: left;
+}
+
+/* Faces sit at different heights in each portrait photo; on wide/short
+   hero banners "cover" hides most of the image, so each slide gets its
+   own vertical anchor (tuned against the source photos) to keep faces
+   in frame instead of a generic center-crop. */
+.hero-slider .slide-inner.hero-pos-1 {
+  background-position: center 24%;
+}
+.hero-slider .slide-inner.hero-pos-2 {
+  background-position: center 13%;
+}
+.hero-slider .slide-inner.hero-pos-3 {
+  background-position: center 19%;
 }
 .hero-slider .slide-inner .slide-content{
   background: rgba(18,28,45,.8);
