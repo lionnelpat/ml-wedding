@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Runtime guestbook data (grows in production, not part of the codebase)
+/data/

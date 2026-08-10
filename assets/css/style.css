@@ -1794,7 +1794,7 @@ div#preloader {
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-  background: url("../images/footer-bg.jpg") center center/cover no-repeat local;
+  background: url("../photos/site/bg-footer.jpg") center center/cover no-repeat local;
   text-align: center;
   padding: 235px 0 250px;
   position: relative;
@@ -2486,7 +2486,7 @@ animation: spineer 2s infinite;
 =================================*/
 
 .cta-area {
-    background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+    background: url(../photos/site/bg-cta.jpg) no-repeat center center / cover;
     position: relative;
     background-attachment: fixed;
 }
@@ -3006,7 +3006,7 @@ animation: spineer 2s infinite;
 }
 
 .rsvp-area {
-    background: url(../images/rsvp/img-1.jpg) no-repeat center center / cover;
+    background: url(../photos/site/bg-rsvp.jpg) no-repeat center center / cover;
     padding: 150px 0;
     position: relative;
     background-attachment: fixed;
@@ -4097,3 +4097,169 @@ option {
 
 
 
+
+/* =========================================================
+   ML-Wedding custom additions (Laetitia & Joël)
+   ========================================================= */
+
+/* --- Temoignage / testimony section --- */
+.temoignage-area {
+  background-color: #f8f8f8;
+}
+
+.temoignage-verse {
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.temoignage-verse p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #283a5e;
+  margin-bottom: 10px;
+}
+
+.temoignage-verse span {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #85aaba;
+}
+
+.temoignage-card {
+  background-color: #fff;
+  padding: 40px 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.temoignage-card h4 {
+  color: #283a5e;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.temoignage-card p {
+  color: #595959;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+/* --- Simplified event dates --- */
+.event-dates-simple .event-dates {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.event-date-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #e6e6e6;
+  padding: 35px 20px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.event-date-day {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: #85aaba;
+  line-height: 1;
+}
+
+.event-date-month {
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.event-note {
+  color: #969595;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* --- Guestbook / Livre d'or --- */
+.guestbook-intro {
+  max-width: 640px;
+  margin: 0 auto 45px;
+  color: #595959;
+}
+
+.guestbook-carousel {
+  margin-bottom: 60px;
+}
+
+.guestbook-item {
+  background-color: #f8f8f8;
+  padding: 40px 30px 30px;
+  text-align: center;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guestbook-quote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #85aaba;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.guestbook-message {
+  color: #333333;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  word-wrap: break-word;
+}
+
+.guestbook-name {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #283a5e;
+  margin-bottom: 4px;
+}
+
+.guestbook-date {
+  font-size: 12px;
+  color: #969595;
+}
+
+.guestbook-empty-message {
+  text-align: center;
+  color: #969595;
+  font-style: italic;
+  padding: 40px 0;
+}
+
+.guestbook-carousel .owl-nav .ti-angle-left,
+.guestbook-carousel .owl-nav .ti-angle-right {
+  color: #85aaba;
+}
+
+.guestbook-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#gb-loader,
+#gb-success,
+#gb-error {
+  display: none;
+}
