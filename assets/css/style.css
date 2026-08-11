@@ -2305,6 +2305,7 @@ couple-area end
 }
 
 .count-down-section #clock .box>div {
+    margin-top: 10px;
     font-size: 60px;
     font-weight: 600;
     line-height: 1em;
@@ -2325,7 +2326,10 @@ couple-area end
 }
 
 .count-down-section #clock .box span {
+    display: block;
+    margin-top: 14px;
     font-size: 14px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
