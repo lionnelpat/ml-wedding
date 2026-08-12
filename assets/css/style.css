@@ -4681,3 +4681,48 @@ button:focus-visible,
 .gift-list-contact a:hover {
   color: #A68B73;
 }
+
+/* --- Mobile hero: force a true circle (fixed equal width/height) --- */
+/* Prior breakpoint rules size this box from padding+content, which only
+   looks round by coincidence; on narrow phones it renders as an oval. */
+@media (max-width: 767px) {
+  section.hero-slider.hero-style-2 .slide-inner .slide-content {
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  section.hero-slider.hero-style-2 .slide-inner .slide-content {
+    width: 260px;
+    height: 260px;
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+
+/* --- Story timeline: force Text-then-Image order on mobile --- */
+/* Two of the five blocks put the image first in the DOM (for the
+   desktop zigzag layout). Bootstrap 3 columns float, so on mobile they
+   simply stack in DOM order -- reorder just these rows via flexbox so
+   every block reads text-then-image on phones, without touching desktop. */
+@media (max-width: 767px) {
+  .story-section .story-timeline .row.mobile-reorder {
+    display: flex;
+    flex-direction: column;
+  }
+  .story-section .story-timeline .row.mobile-reorder > div:first-child {
+    order: 2;
+  }
+  .story-section .story-timeline .row.mobile-reorder > div:last-child {
+    order: 1;
+  }
+}
