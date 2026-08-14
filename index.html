@@ -129,13 +129,30 @@
                         <button class="close-navbar"><i class="ti-close"></i></button>
                         <ul class="nav navbar-nav">
                             <li class="current-menu-item"><a href="#home">Accueil</a></li>
-                            <li><a href="#couple">Couple</a></li>
-                            <li><a href="#story">Histoire</a></li>
-                            <li><a href="#temoignage">T&eacute;moignage</a></li>
-                            <li><a href="#event">&Eacute;v&eacute;nement</a></li>
-                            <li><a href="#gallery">Galerie</a></li>
-                            <li><a href="#videos">Vid&eacute;os</a></li>
-                            <li><a href="#cadeaux">Cadeaux</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#couple">Notre Couple</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#couple">Le Couple</a></li>
+                                    <li><a href="#story">Notre Histoire</a></li>
+                                    <li><a href="#temoignage">T&eacute;moignage</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#event">Le Mariage</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#event">Quand &amp; O&ugrave;</a></li>
+                                    <li><a href="#couleurs">Couleurs &amp; Inspiration</a></li>
+                                    <li><a href="#cadeaux">Liste de Cadeaux</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#gallery">Galerie &amp; Vid&eacute;os</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#gallery">Galerie Photos</a></li>
+                                    <li><a href="#videos">Chor&eacute;graphies</a></li>
+                                    <li><a href="#capsules">Capsules Vid&eacute;o</a></li>
+                                </ul>
+                            </li>
                             <!-- <li><a href="#rsvp">Livre d'or</a></li> V2 -->
                         </ul>
                     </div><!-- end of nav-collapse -->
@@ -391,8 +408,8 @@
                 </div>
                 <div class="row videos-grid">
                     <div class="col-md-3 col-sm-6">
-                        <div class="video-card" data-youtube-id="" tabindex="0" role="button" aria-label="Regarder la capsule 1">
-                            <div class="video-thumb" style="background-image:url('assets/photos/site/rencontre.jpeg')">
+                        <div class="video-card" data-youtube-id="bxVOt-Bw5PI" tabindex="0" role="button" aria-label="Regarder la capsule 1">
+                            <div class="video-thumb" style="background-image:url('https://img.youtube.com/vi/bxVOt-Bw5PI/hqdefault.jpg')">
                                 <span class="video-play"><i class="ti-control-play"></i></span>
                             </div>
                             <h5 class="video-title">Capsule 1</h5>
@@ -488,7 +505,8 @@
                             <span class="event-date-day">20</span>
                             <span class="event-date-month">Ao&ucirc;t 2026</span>
                             <h4 class="event-date-title">Mariage Civil</h4>
-                            <p class="event-date-desc">Jeudi. D'autres d&eacute;tails logistiques vous seront communiqu&eacute;s d&egrave;s la semaine prochaine.</p>
+                            <p class="event-date-desc">Jeudi d&egrave;s 17h00 &mdash; H&ocirc;tel de Ville.</p>
+                            <a href="https://maps.app.goo.gl/fkfQK7kzAANLFYQp9" target="_blank" rel="noopener" class="event-date-map">Voir sur la carte</a>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
@@ -497,7 +515,7 @@
                             <span class="event-date-month">Ao&ucirc;t 2026</span>
                             <h4 class="event-date-title">B&eacute;n&eacute;diction Nuptiale</h4>
                             <p class="event-date-desc">Samedi d&egrave;s 12h00 &mdash; &Eacute;glise &Eacute;vang&eacute;lique de Dakar (EED).<br>Le grand rendez-vous &agrave; ne pas manquer&nbsp;!</p>
-                            <a href="https://maps.app.goo.gl/gdMzbOOXyXmRAHVfl" target="_blank" rel="noopener" class="event-date-map">Voir sur la carte</a>
+                            <a href="https://maps.app.goo.gl/kMeoBtXDTSPQR8Zh7" target="_blank" rel="noopener" class="event-date-map">Voir sur la carte</a>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
@@ -512,7 +530,68 @@
             </div>
         </div>
         <!-- event-area end -->
-        <!--Start project area-->  
+
+        <!-- start colors-section -->
+        <section id="couleurs" class="colors-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title text-center">
+                            <h2>Couleurs &amp; Inspiration</h2>
+                        </div>
+                        <p class="text-center videos-intro">Chaque couleur de notre mariage porte un sens. Cliquez sur une couleur pour d&eacute;couvrir sa signification.</p>
+                    </div>
+                </div>
+                <div class="row colors-grid justify-content-center">
+                    <div class="col-swatch">
+                        <button type="button" class="color-swatch" data-color-name="Pure White" data-color-hex="#FFFFFF" data-color-subtitle="Le Saint-Esprit" data-color-desc="Ici, on reste aligné avec la pensée de cette couleur : le blanc symbolise la pureté, la paix et le Saint-Esprit qui nous a été donné.">
+                            <span class="color-swatch-circle" style="background-color:#FFFFFF;border:1px solid #e6e6e6;"></span>
+                            <span class="color-swatch-name">Pure White</span>
+                        </button>
+                    </div>
+                    <div class="col-swatch">
+                        <button type="button" class="color-swatch" data-color-name="Golden Beige" data-color-hex="#E3C7A8" data-color-subtitle="La Gloire, la pr&eacute;sence glorieuse de Dieu" data-color-desc="L&rsquo;or reste le symbole biblique du sacr&eacute;, de ce qui a de la valeur et qui est glorieux. Le Saint-Esprit est &eacute;galement repr&eacute;sent&eacute; comme cette glorieuse pr&eacute;sence de Dieu en nous. Dans cette palette, l&rsquo;or n&rsquo;est pas scintillant, il est plut&ocirc;t adouci.">
+                            <span class="color-swatch-circle" style="background-color:#E3C7A8;"></span>
+                            <span class="color-swatch-name">Golden Beige</span>
+                        </button>
+                    </div>
+                    <div class="col-swatch">
+                        <button type="button" class="color-swatch" data-color-name="Navy Blue" data-color-hex="#121C2D" data-color-subtitle="Fid&eacute;lit&eacute; &amp; Loyaut&eacute;, rappel de la loi de Dieu" data-color-desc="Au lieu d&rsquo;exprimer l&rsquo;amour sous le regard du sacrifice (en rouge), les mari&eacute;s souhaitent exprimer l&rsquo;amour fid&egrave;le de Dieu, un amour qui ne faillit pas, fid&egrave;le, stable et profond. Cette couleur symbolise &eacute;galement leur engagement &agrave; rester fid&egrave;les l&rsquo;un &agrave; l&rsquo;autre dans l&rsquo;alliance du mariage. Enfin, au-del&agrave; des autres apparitions de cette couleur dans la Bible, Nombres 15:38-40 pr&eacute;sente le bleu comme signe de rappel d&rsquo;ob&eacute;ir aux commandements donn&eacute;s par Dieu.">
+                            <span class="color-swatch-circle" style="background-color:#121C2D;"></span>
+                            <span class="color-swatch-name">Navy Blue</span>
+                        </button>
+                    </div>
+                    <div class="col-swatch">
+                        <button type="button" class="color-swatch" data-color-name="Moka Clair" data-color-hex="#A68B73" data-color-subtitle="La Sobri&eacute;t&eacute;" data-color-desc="Une esp&eacute;rance qui ne trompe pas est une certitude. Elle n&rsquo;est pas fragile ou vacillante : elle est stable. Bien que cette couleur n&rsquo;ait pas de r&eacute;f&eacute;rence dans la Bible, ici le Moka Clair apporte la notion de fondation. C&rsquo;est une teinte neutre, intemporelle, qui &eacute;voque la pierre, la roche. Elle incarne la sobri&eacute;t&eacute; d&rsquo;une foi ancr&eacute;e : l&rsquo;esp&eacute;rance chr&eacute;tienne est ici repr&eacute;sent&eacute;e comme quelque chose de solide et de durable, sur lequel on peut s&rsquo;appuyer sans crainte.">
+                            <span class="color-swatch-circle" style="background-color:#A68B73;"></span>
+                            <span class="color-swatch-name">Moka Clair</span>
+                        </button>
+                    </div>
+                    <div class="col-swatch">
+                        <button type="button" class="color-swatch" data-color-name="Marron Cognac" data-color-hex="#824C1C" data-color-subtitle="La Chaleur et l&rsquo;&Eacute;nergie" data-color-desc="Cette couleur n&rsquo;a pas de symbole biblique apparent, mais dans ce moodboard de mariage, c&rsquo;est la couleur qui apporte de la chaleur, l&rsquo;&eacute;nergie et la convivialit&eacute;. Ici, il est question de la chaleur d&rsquo;un foyer, d&rsquo;un c&oelig;ur rempli d&rsquo;amour et plein de vie.">
+                            <span class="color-swatch-circle" style="background-color:#824C1C;"></span>
+                            <span class="color-swatch-name">Marron Cognac</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end colors-section -->
+
+        <!-- color meaning modal -->
+        <div class="color-modal" id="color-modal" aria-hidden="true">
+            <div class="color-modal-overlay" id="color-modal-overlay"></div>
+            <div class="color-modal-content">
+                <button type="button" class="color-modal-close" id="color-modal-close" aria-label="Fermer">&times;</button>
+                <span class="color-modal-swatch" id="color-modal-swatch"></span>
+                <h4 class="color-modal-name" id="color-modal-name"></h4>
+                <span class="color-modal-subtitle" id="color-modal-subtitle"></span>
+                <p class="color-modal-desc" id="color-modal-desc"></p>
+            </div>
+        </div>
+        <!-- end color meaning modal -->
+
+        <!--Start project area-->
         <section id="gallery" class="gallery-section gallery-section-2 section-padding">
             <div class="container">
                 <div class="col-l2">
@@ -930,6 +1009,7 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/videos.js"></script>
     <script src="assets/js/intro-video-popup.js"></script>
+    <script src="assets/js/colors.js"></script>
     <!-- <script src="assets/js/guestbook.js"></script> V2 -->
 </body>
 </html>
