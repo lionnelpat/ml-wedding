@@ -627,7 +627,7 @@
 
             smallNavFunctionality();
 
-            smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".site-header .navigation").innerHeight());
+            smoothScrolling($("#navbar > ul > li > a[href^='#'], #navbar .sub-menu a[href^='#']"), $(".site-header .navigation").innerHeight());
 
             smoothScrolling($(".go-rsvp-area"), $(".site-header .navigation").innerHeight());
 
