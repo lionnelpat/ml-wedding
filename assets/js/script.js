@@ -11,7 +11,12 @@
         var navbar = $(".navigation-holder");
         var openBtn = $(".navbar-header .open-btn");
         var closeBtn = $(".navigation-holder .close-navbar");
-        var navLinks = $("#navbar > ul > li > a[href^='#']");
+        // Top-level links that navigate directly, plus links inside a
+        // sub-menu -- but NOT the dropdown-parent links themselves
+        // (those only toggle their sub-menu open on mobile and must not
+        // also close the whole nav panel).
+        var navLinks = $("#navbar > ul > li > a[href^='#']").not("#navbar > ul > li.menu-item-has-children > a")
+            .add("#navbar .sub-menu a[href^='#']");
 
         openBtn.on("click", function() {
             if (!navbar.hasClass("slideInn")) {
